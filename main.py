@@ -37,7 +37,7 @@ def send_sms():
   account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
   auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
   number_send = os.environ.get("MOBILE_NUMBER_SEND")
-  number_receive = os.environ.get["MOBILE_NUMBER_RECEIVE"]
+  number_receive = os.environ.get("MOBILE_NUMBER_RECEIVE")
   client = Client(account_sid, auth_token)
   
   if will_rain:
